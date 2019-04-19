@@ -1,0 +1,11 @@
+version: '3'
+services:
+  os:
+    restart: always
+    build: ./os
+    working_dir: "/work"
+    volumes:
+      - ./:/work
+    tty: true
+
+## docker-compose exec os bash
